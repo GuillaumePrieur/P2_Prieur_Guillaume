@@ -1,0 +1,268 @@
+/* Les couleurs de la charte sont le bleu #0065FC, 
+et sa version plus claire  #DEEBFF
+ainsi que le gris pour le fond #F2F2F2.
+•	color: #0065FC;
+    color: #DEEBFF;
+    color: #F2F2F2;
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: "Raleway", "Sans serif";
+    margin: 0;
+}
+
+a{
+
+}
+/* En-tête */
+.header{
+
+}
+
+.headerImg{
+
+}
+
+.headerNav {
+    font-weight: bold;
+}
+
+.headerNavLink{
+
+}
+
+.headerSignup{
+
+}
+/* Corps de Page*/
+.main{
+
+}
+/*Section Recherche*/
+.search{
+
+}
+
+.searchHeader{
+
+}
+
+.searchHeaderTitle{
+
+}
+
+.searchHeaderSubtitle{
+
+}
+/*Barre de Recherche*/
+.searchForm{
+
+}
+
+.searchFormIcon{
+
+}
+
+.searchFormInput{
+
+}
+
+.searchFormSubmit {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+
+}
+/*Filtres de Recherche*/
+.searchFilters{
+
+}
+
+.searchFiltersTitle{
+
+}
+
+.searchFiltersFilter{
+
+}
+
+.searchFiltersFilterIconDiv{
+
+}
+
+.searchFiltersFilterIcon{
+
+}
+
+.searchFiltersFilterTitle{
+
+}
+/*Résultat de Recherche*/
+.searchResult{
+
+}
+
+.searchResultIconDiv{
+
+}
+
+.searchResultIcon{
+
+}
+
+.searchResultText{
+
+}
+/*Section Hebergement*/
+.lodging{
+
+}
+/*Hébergement à Marseille*/
+.lodgingMain{
+
+}
+
+.lodgingMainHeader{
+
+}
+
+.lodgingMainHeaderTitle{
+
+}
+
+.lodgingMainCard{
+
+}
+
+.lodgingMainCardFigure{
+
+}
+
+.lodgingMainCardImg{
+
+}
+
+.lodgingMainCardFigureCaption{
+
+}
+
+.lodgingMainCardFigureCaptionTitle{
+
+}
+
+.lodgingMainCardDesc{
+
+}
+
+.lodgingMainCardDescPrice{
+
+}
+
+.lodgingMainCardRating{
+
+}
+
+.lodgingMainCardRatingIcon{
+
+}
+
+.lodgingMainViewmore{
+
+}
+/* Les Plus Populaires */
+.lodgingPopular{
+
+}
+
+.lodgingPopularTitle{
+
+}
+
+.lodgingPopularTitleIcon{
+
+}
+
+.lodgingPopularCard{
+    
+}
+
+.lodgingPopularCardImgDiv{
+
+}
+
+.lodgingPopularCardImg{
+
+}
+
+.lodgingPopularCardDesc{
+
+}
+
+.lodgingPopularSpace{
+
+}
+/* Section Activités */
+.activity{
+
+}
+
+.activityTitle{
+
+}
+
+.activityCard{
+
+}
+
+.activityCardImgDiv{
+
+}
+
+.activityCardImg{
+
+}
+/* Préparation agencement des cartes avec Flexbox */
+.activityCard1{
+
+}
+.activityCard2{
+
+}
+.activityCard3{
+
+}
+.activityCard4{
+    
+}
+.activityCard5{
+
+}
+.activityCard6{
+    
+}
+/* Pied de Page */
+.footer{
+
+}
+
+.footerColumnDiv{
+
+}
+
+.footerColumn{
+
+}
+
+.footerColumnTitle{
+
+}
+
+.footerColumnLink{
+
+}
+
+
+
+
