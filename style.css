@@ -14,7 +14,8 @@ body {
 }
 
 a{
-
+    color: inherit;
+    text-decoration: none;
 }
 /* En-tête */
 .header{
@@ -22,19 +23,27 @@ a{
 }
 
 .headerImg{
+    padding: 2.73rem 3.3rem;
 
 }
 
 .headerNav {
+    
     font-weight: bold;
 }
 
 .headerNavLink{
-
+    font-size: 1em;
+    font-weight: 600;
+}
+.headerNavLink:hover{
+        color: #0065FC;
 }
 
 .headerSignup{
-
+    font-size: 1em;
+    font-weight: 800;
+    color: #0065FC;
 }
 /* Corps de Page*/
 .main{
@@ -50,11 +59,13 @@ a{
 }
 
 .searchHeaderTitle{
-
+    margin-bottom: 0.5rem;
 }
 
 .searchHeaderSubtitle{
-
+    margin-top: 0;
+    font-weight: 550;
+    
 }
 /*Barre de Recherche*/
 .searchForm{
@@ -66,14 +77,17 @@ a{
 }
 
 .searchFormInput{
-
+    font-family: "Raleway";
+    font-size: 1.1em;
+    font-weight: 800;
 }
 
 .searchFormSubmit {
     background-color: #0065FC;
     color: white;
-    font-weight: bold;
-
+    font-family: "Raleway";
+    font-size: 1.1em;
+    font-weight: 600;
 }
 /*Filtres de Recherche*/
 .searchFilters{
@@ -81,7 +95,8 @@ a{
 }
 
 .searchFiltersTitle{
-
+    font-size: 1.1em;
+    font-weight: 800;
 }
 
 .searchFiltersFilter{
@@ -93,11 +108,12 @@ a{
 }
 
 .searchFiltersFilterIcon{
-
+    color:#0065FC;
 }
 
 .searchFiltersFilterTitle{
-
+    font-size: 1.1em;
+    font-weight: 800;
 }
 /*Résultat de Recherche*/
 .searchResult{
@@ -109,11 +125,11 @@ a{
 }
 
 .searchResultIcon{
-
+    color:#0065FC;  
 }
 
 .searchResultText{
-
+    font-weight: 500;
 }
 /*Section Hebergement*/
 .lodging{
@@ -141,7 +157,7 @@ a{
 }
 
 .lodgingMainCardImg{
-
+    height: 8rem;
 }
 
 .lodgingMainCardFigureCaption{
@@ -149,7 +165,7 @@ a{
 }
 
 .lodgingMainCardFigureCaptionTitle{
-
+    font-size: 1.1rem;
 }
 
 .lodgingMainCardDesc{
@@ -165,11 +181,15 @@ a{
 }
 
 .lodgingMainCardRatingIcon{
-
+    color: #0065FC; 
+}
+.lodgingMainCardRatingIcon[data-yolo=true] {
+    color: #DEEBFF;
 }
 
 .lodgingMainViewmore{
-
+    font-size: 1.1em;
+    font-weight: 800;
 }
 /* Les Plus Populaires */
 .lodgingPopular{
@@ -189,7 +209,9 @@ a{
 }
 
 .lodgingPopularCardImgDiv{
-
+    width: 40%;
+    min-width: 33%;
+    max-width: 33%;
 }
 
 .lodgingPopularCardImg{
@@ -256,11 +278,16 @@ a{
 }
 
 .footerColumnTitle{
-
+    font-size: 1.1em;
+    font-weight: 800;
 }
 
 .footerColumnLink{
+    font-weight: 550;
+}
 
+.footerColumnLink:hover{
+    text-decoration: underline;
 }
 
 
