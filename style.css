@@ -19,7 +19,8 @@ a{
 }
 /* En-tête */
 .header{
-
+     /* display: flex;  */
+     /* justify-content: "center"  */
 }
 
 .headerImg{
