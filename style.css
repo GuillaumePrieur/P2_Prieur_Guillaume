@@ -8,6 +8,12 @@ ainsi que le gris pour le fond #F2F2F2.
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap");
 
+/* Si besoin
+* {
+    box-sizing: border-box;
+} 
+*/
+
 body {
     font-family: "Raleway", "Sans serif";
     margin: 0;
@@ -19,12 +25,11 @@ a{
 }
 /* En-tête */
 .header{
-     /* display: flex;  */
-     /* justify-content: "center"  */
+    display: flex;
+    justify-content: space-between;
 }
 
 .headerImg{
-    padding: 2.73rem 3.3rem;
 
 }
 
@@ -144,6 +149,11 @@ a{
     border-radius: 100%;
     border: 1px solid #585656;
     background-color: #D9D9D9;
+    padding:0.1rem;
+    height: 1rem;
+    width: 1rem;
+    display:flex;
+    justify-content: center;
 }
 
 .searchResultText{
