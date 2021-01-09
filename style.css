@@ -177,35 +177,50 @@ a{
 }
 
 .lodgingMainCard{
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px black;
+    transition-duration: 0.1s;
+    cursor: pointer;
+    box-sizing: border-box;
+}
 
+.lodgingMainCard:hover {
+    transform: scale(1.01);
 }
 
 .lodgingMainCardFigure{
-
+    margin: 0;
 }
 
 .lodgingMainCardImg{
-    height: 8rem;
+    height: 7rem;
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .lodgingMainCardFigureCaption{
-
+    margin: 0.25rem 0.75rem 0 0.75rem;
 }
 
 .lodgingMainCardFigureCaptionTitle{
-    font-size: 1.1rem;
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 
 .lodgingMainCardDesc{
-
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 
 .lodgingMainCardDescPrice{
-
+    font-weight: bold;
 }
 
 .lodgingMainCardRating{
-
+    margin: 0 0.75rem 0.25rem 0.75rem;
 }
 
 .lodgingMainCardRatingIcon{
@@ -218,6 +233,7 @@ a{
 .lodgingMainViewmore{
     font-size: 1.1em;
     font-weight: 800;
+    font-weight: bold;
 }
 /* Les Plus Populaires */
 .lodgingPopular{
