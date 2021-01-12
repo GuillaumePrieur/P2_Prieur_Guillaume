@@ -16,7 +16,8 @@ ainsi que le gris pour le fond #F2F2F2.
 
 body {
     font-family: "Raleway", "Sans serif";
-    margin: 0;
+    /* margin:0; */
+
 }
 
 a{
@@ -103,18 +104,29 @@ a{
 }
 /*Filtres de Recherche*/
 .searchFilters{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    margin-top: 1.5rem;
 
 }
 
 .searchFiltersTitle{
+    display:flex;
+    align-items: center;
     font-size: 1.1em;
     font-weight: 800;
+    margin-right: 2rem;
 }
 
 .searchFiltersFilter{
-  border: 1px solid;
-  border-radius: 3rem;
-  margin-bottom:1rem;
+    display:flex;
+    align-items: center;
+    border: 2px solid #e5e5e5;
+    border-left: hidden;
+    border-radius: 3rem;
+    margin-bottom:1rem;
+    margin-right: 1.5rem;
 }
 
 .searchFiltersFilterIconDiv{
@@ -124,20 +136,27 @@ a{
 .searchFiltersFilterIcon{
     color:#0065FC;
     border-radius: 100%;
-    background-color: #8ebdd3;
-    padding: 1rem;
-    height: 1rem;
-    width: 1rem;
-    cursor:pointer;
+    background-color: #deebff;
+    cursor:pointer; 
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center; /* alignement vertical */
+    justify-content: center; /* alignement horizontal */
+    margin: -3px; /* pour centrer l'icone sur la bordure/ ameliorer l'aspect visuel*/
 }
 
 .searchFiltersFilterTitle{
     font-size: 1.1em;
     font-weight: 800;
+    padding:0 1rem 0 1rem;
 }
 /*Résultat de Recherche*/
 .searchResult{
-
+    display:flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .searchResultIconDiv{
@@ -147,13 +166,15 @@ a{
 .searchResultIcon{
     color:#0065FC;  
     border-radius: 100%;
-    border: 1px solid #585656;
-    background-color: #D9D9D9;
-    padding:0.1rem;
-    height: 1rem;
-    width: 1rem;
-    display:flex;
+    border: 1.7px solid #e5e5e5;
+    background-color: white;
+    padding:0.4rem;
+    height: 0.4rem;
+    width: 0.4rem;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
 }
 
 .searchResultText{
@@ -161,11 +182,23 @@ a{
 }
 /*Section Hebergement*/
 .lodging{
+display: flex;
+flex-direction: row;
 
 }
 /*Hébergement à Marseille*/
-.lodgingMain{
+.FlexCard{
+    display:flex;
+    flex-wrap: wrap;
 
+}
+.lodgingMain{
+    border: 1px solid black;
+    margin: 0 2rem 2rem 0rem;
+    /* Alignement interne de la section pour eviter collision avec aside avec margin des flexcards*/
+    padding-left: 2rem; 
+    border-radius: 1.25rem;
+    background-color: #f2f2f2;
 }
 
 .lodgingMainHeader{
@@ -177,13 +210,14 @@ a{
 }
 
 .lodgingMainCard{
+    
     background-color: white;
-    padding: 0.4rem;
+    padding: 0.3rem;
+    margin: 0 2rem 2rem 0;
     border-radius: 1.25rem;
-    box-shadow: 0 0 16px black;
+    box-shadow: 0 0 16px #c4baba;
     transition-duration: 0.1s;
     cursor: pointer;
-    box-sizing: border-box;
 }
 
 .lodgingMainCard:hover {
@@ -195,20 +229,22 @@ a{
 }
 
 .lodgingMainCardImg{
-    height: 7rem;
+    height: 8rem;
     object-fit: cover;
-    max-width: 100%;
-    width: 100%;
-    max-height: 100%;
+    max-width: 250px;
+    width:100%;
+    max-height: 150px;
     border-radius: 1rem 1rem 0 0;
+    
 }
 
 .lodgingMainCardFigureCaption{
-    margin: 0.25rem 0.75rem 0 0.75rem;
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
 
 .lodgingMainCardFigureCaptionTitle{
-    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+    margin: 0.25rem 0 0.25rem 0;
+    font-size: 17px;
 }
 
 .lodgingMainCardDesc{
@@ -216,7 +252,7 @@ a{
 }
 
 .lodgingMainCardDescPrice{
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .lodgingMainCardRating{
@@ -237,7 +273,10 @@ a{
 }
 /* Les Plus Populaires */
 .lodgingPopular{
-
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    background-color: #f2f2f2;
 }
 
 .lodgingPopularTitle{
@@ -249,17 +288,28 @@ a{
 }
 
 .lodgingPopularCard{
-    
+    background-color: white;
+    padding: 0.3rem;
+    margin: 0rem 2rem 2rem 0;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #c4baba;
+    transition-duration: 0.1s;
+    cursor: pointer;
 }
 
 .lodgingPopularCardImgDiv{
-    width: 40%;
+    /* width: 40%;
     min-width: 33%;
-    max-width: 33%;
-}
+    max-width: 33%; */
+} 
 
 .lodgingPopularCardImg{
-
+    height: 8rem;
+    object-fit: cover;
+    max-width: 250px;
+    width:100%;
+    max-height: 150px;
+    border-radius: 1rem 1rem 0 0;
 }
 
 .lodgingPopularCardDesc{
@@ -310,7 +360,9 @@ a{
 }
 /* Pied de Page */
 .footer{
-
+    border: 1px solid black;
+    padding: 2rem;
+    background-color: #f2f2f2;
 }
 
 .footerColumnDiv{
