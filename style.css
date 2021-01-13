@@ -75,12 +75,20 @@ a{
 }
 /*Barre de Recherche*/
 .searchForm{
-
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0 1rem 0;
 }
 
 .searchFormIcon{
-    font-size:1.1rem;
-    margin-left:1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    border-radius: 25% 0 0 25%;
+    background-color: #f2f2f2;
+    height: 3rem;
+    width: 3rem;
 }
 
 .searchFormInput{
@@ -210,7 +218,6 @@ flex-direction: row;
 }
 
 .lodgingMainCard{
-    
     background-color: white;
     padding: 0.3rem;
     margin: 0 2rem 2rem 0;
@@ -231,24 +238,27 @@ flex-direction: row;
 .lodgingMainCardImg{
     height: 8rem;
     object-fit: cover;
-    max-width: 250px;
-    width:100%;
-    max-height: 150px;
+    max-width: 225px;
+    max-height: 125px;
+    min-width: 225px;
+    min-height: 125x;
     border-radius: 1rem 1rem 0 0;
     
 }
 
-.lodgingMainCardFigureCaption{
+/* .lodgingMainCardFigureCaption{
     margin: 0.25rem 0.75rem 0.25rem 0.75rem;
-}
+} */
 
 .lodgingMainCardFigureCaptionTitle{
-    margin: 0.25rem 0 0.25rem 0;
-    font-size: 17px;
+    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+    font-size: 16px;
+    font-weight: 800;
 }
 
 .lodgingMainCardDesc{
     margin: 0.25rem 0.75rem 0.25rem 0.75rem;
+    font-size: 14px;
 }
 
 .lodgingMainCardDescPrice{
@@ -256,6 +266,7 @@ flex-direction: row;
 }
 
 .lodgingMainCardRating{
+    display:flex;
     margin: 0 0.75rem 0.25rem 0.75rem;
 }
 
@@ -273,14 +284,19 @@ flex-direction: row;
 }
 /* Les Plus Populaires */
 .lodgingPopular{
+    display:flex;
+    flex-direction: column;
     border: 1px solid black;
-    padding: 2rem;
+    padding: 0 2rem 0 2rem;
     border-radius: 1.25rem;
     background-color: #f2f2f2;
+    margin-bottom: 2rem;
 }
 
 .lodgingPopularTitle{
-
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .lodgingPopularTitleIcon{
@@ -288,31 +304,44 @@ flex-direction: row;
 }
 
 .lodgingPopularCard{
+    display:flex;
+    flex-direction: row;
     background-color: white;
     padding: 0.3rem;
-    margin: 0rem 2rem 2rem 0;
+    margin-bottom: 2rem;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #c4baba;
     transition-duration: 0.1s;
     cursor: pointer;
+    min-width: 300px;
+    min-height: 100px;
+    max-height:8rem;
+}
+.lodgingPopularCard:hover{
+    transform: scale(1.01);
 }
 
 .lodgingPopularCardImgDiv{
-    /* width: 40%;
-    min-width: 33%;
-    max-width: 33%; */
+    display:flex;
+    flex-direction: row;
 } 
 
 .lodgingPopularCardImg{
-    height: 8rem;
-    object-fit: cover;
+    min-height: 120px;
     max-width: 250px;
     width:100%;
-    max-height: 150px;
-    border-radius: 1rem 1rem 0 0;
+    max-height: 120px;
+    border-radius: 1rem 0 0 1rem;
+    max-width: 40%;
+
 }
 
 .lodgingPopularCardDesc{
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+
+
 
 }
 
@@ -329,7 +358,13 @@ flex-direction: row;
 }
 
 .activityCard{
-
+    background-color: white;
+    padding: 0.3rem;
+    margin: 0 2rem 2rem 0;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #c4baba;
+    transition-duration: 0.1s;
+    cursor: pointer;
 }
 
 .activityCardImgDiv{
@@ -337,7 +372,13 @@ flex-direction: row;
 }
 
 .activityCardImg{
-
+    height: 8rem;
+    object-fit: cover;
+    max-width: 250px;
+    max-height: 125px;
+    min-width: 250px;
+    min-height: 125x;
+    border-radius: 1rem 1rem 0 0;
 }
 /* Préparation agencement des cartes avec Flexbox */
 .activityCard1{
