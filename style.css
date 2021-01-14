@@ -16,7 +16,7 @@ ainsi que le gris pour le fond #F2F2F2.
 
 body {
     font-family: "Raleway", "Sans serif";
-    /* margin:0; */
+    margin: 3rem;
 
 }
 
@@ -36,14 +36,21 @@ a{
 
 .headerNav {
     font-weight: bold;
+    margin-left:auto;
 }
 
 .headerNavLink{
     font-size: 1em;
     font-weight: 600;
+    padding: 2.8rem;
+    transition-duration: 0.1s;
 }
 .headerNavLink:hover{
         color: #0065FC;
+        border-top: 3px solid #0065FC;
+
+        
+
 }
 
 .headerSignup{
@@ -187,6 +194,7 @@ a{
 
 .searchResultText{
     font-weight: 500;
+    margin: 0 0 0 0; /* Non cumul marge */
 }
 /*Section Hebergement*/
 .lodging{
@@ -266,8 +274,8 @@ flex-direction: row;
 }
 
 .lodgingMainCardRating{
-    display:flex;
-    margin: 0 0.75rem 0.25rem 0.75rem;
+    /*margin-top: auto permet l'espacement pour mettre en bas de Card */
+    margin: auto 0.75rem 0.25rem 0.75rem;
 }
 
 .lodgingMainCardRatingIcon{
@@ -339,7 +347,7 @@ flex-direction: row;
 .lodgingPopularCardDesc{
 display:flex;
 flex-direction: column;
-justify-content: space-around;
+/* justify-content: space-around; */
 
 
 
@@ -401,6 +409,7 @@ justify-content: space-around;
 }
 /* Pied de Page */
 .footer{
+    margin:-3rem;
     border: 1px solid black;
     padding: 2rem;
     background-color: #f2f2f2;
