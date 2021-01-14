@@ -16,7 +16,7 @@ ainsi que le gris pour le fond #F2F2F2.
 
 body {
     font-family: "Raleway", "Sans serif";
-    margin: 3rem;
+    margin: 2rem;
 
 }
 
@@ -212,7 +212,7 @@ flex-direction: row;
     border: 1px solid black;
     margin: 0 2rem 2rem 0rem;
     /* Alignement interne de la section pour eviter collision avec aside avec margin des flexcards*/
-    padding-left: 2rem; 
+    padding:1rem 0.5rem 2.5rem 2.5rem; 
     border-radius: 1.25rem;
     background-color: #f2f2f2;
 }
@@ -295,7 +295,7 @@ flex-direction: row;
     display:flex;
     flex-direction: column;
     border: 1px solid black;
-    padding: 0 2rem 0 2rem;
+    padding: 1rem 2.5rem 0 2.5rem;
     border-radius: 1.25rem;
     background-color: #f2f2f2;
     margin-bottom: 2rem;
@@ -316,7 +316,7 @@ flex-direction: row;
     flex-direction: row;
     background-color: white;
     padding: 0.3rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #c4baba;
     transition-duration: 0.1s;
@@ -409,7 +409,7 @@ flex-direction: column;
 }
 /* Pied de Page */
 .footer{
-    margin:-3rem;
+    margin:-2rem;
     border: 1px solid black;
     padding: 2rem;
     background-color: #f2f2f2;
