@@ -210,6 +210,7 @@ flex-direction: row;
 .FlexCard{
     display:flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 
 }
 .lodgingMain{
@@ -248,7 +249,6 @@ flex-direction: row;
 
 .lodgingMainCardImg{
     height: 8rem;
-    object-fit: cover;
     max-width: 225px;
     max-height: 125px;
     min-width: 225px;
@@ -324,8 +324,8 @@ flex-direction: row;
     transition-duration: 0.1s;
     cursor: pointer;
     min-width: 300px;
-    min-height: 100px;
-    max-height:8rem;
+    /* max-width: 370px; Travail de la largeur max en agrandissant en cours*/
+    min-height: 140px;
 }
 .lodgingPopularCard:hover{
     transform: scale(1.01);
@@ -337,10 +337,10 @@ flex-direction: row;
 } 
 
 .lodgingPopularCardImg{
-    min-height: 120px;
+    min-height: 140px;
     max-width: 250px;
     width:100%;
-    max-height: 120px;
+    max-height: 140px;
     border-radius: 1rem 0 0 1rem;
     max-width: 40%;
 
@@ -362,69 +362,53 @@ flex-direction: column;
 .activity{
     display:flex;
     flex-flow: row wrap;
+    margin-bottom: 2.5rem;
     justify-content: space-between;
-    
 }
-.activity * {
-    /* flex: 0 0 auto;
-    width:25%; */
-}
+
 .activityTitle{
 
 }
 
 }
 .activityCard{
-background-color: #0065FC;
-width:23%;
-}
-
-.activityCardImgDiv{
 }
 
 .activityCardImg{
-    height: 8rem;
-    object-fit: cover;
-    max-width: 300px;
-    max-height: 125px;
-    min-width: 300px;
-    min-height: 125x;
-    border-radius: 1rem 1rem 0 0;
+    max-width: 325px;
+    max-height:auto;
+    min-width: 325px;
+    min-height: 500px;
+    object-fit:cover;
+}
+
+ .activityCardColumn2 .activityCardImg {
+    max-width: 325px;
+    max-height:225px;
+    min-width: 325px;
+    min-height: 225px;
+}
+.activityCardColumn4 .activityCardImg {
+    max-width: 325px;
+    max-height:225px;
+    min-width: 325px;
+    min-height: 225px;
 }
 
 
 /* Préparation agencement des cartes avec Flexbox */
-/* .activityCardColumn1{
-    margin-right: 2.5rem;
 
+.activityCardColumn1, .activityCardColumn2, 
+.activityCardColumn3, .activityCardColumn4 { 
+    background-color: white;
+    border-radius: 1.25rem;
+    box-shadow: 0 0 16px #c4baba;
+    transition-duration: 0.1s;
+    max-height: 100%;
+    max-width: 100%;
+    margin:1rem;
 }
-.activityCardColumn2{
-    margin-right: 2.5rem;
 
-}
-.activityCardColumn3{
-    margin-right: 2.5rem;
-
-}
-.activityCardColumn4{
-    margin-right: 2.5rem; */
-
-}
-.activityCard2{
-
-}
-.activityCard3{
-
-}
-.activityCard4{
-    
-}
-.activityCard5{
-
-}
-.activityCard6{
-    
-}
 /* Pied de Page */
 .footer{
     margin:-2rem;
