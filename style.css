@@ -362,35 +362,52 @@ flex-direction: column;
 .activity{
     display:flex;
     flex-flow: row wrap;
+    justify-content: space-between;
     
 }
 .activity * {
-    flex: 0 0 auto;
-    width:25%;
+    /* flex: 0 0 auto;
+    width:25%; */
 }
 .activityTitle{
 
 }
 
+}
 .activityCard{
-
+background-color: #0065FC;
+width:23%;
 }
 
 .activityCardImgDiv{
-
 }
 
 .activityCardImg{
     height: 8rem;
     object-fit: cover;
-    max-width: 250px;
+    max-width: 300px;
     max-height: 125px;
-    min-width: 250px;
+    min-width: 300px;
     min-height: 125x;
     border-radius: 1rem 1rem 0 0;
 }
+
+
 /* Préparation agencement des cartes avec Flexbox */
-.activityCard1{
+/* .activityCardColumn1{
+    margin-right: 2.5rem;
+
+}
+.activityCardColumn2{
+    margin-right: 2.5rem;
+
+}
+.activityCardColumn3{
+    margin-right: 2.5rem;
+
+}
+.activityCardColumn4{
+    margin-right: 2.5rem; */
 
 }
 .activityCard2{
