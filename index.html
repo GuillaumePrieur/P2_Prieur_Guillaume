@@ -17,71 +17,59 @@
 
 <body>
 <!--En tête : Titre, Logo, Barre de Navigation-->
-    <header class="header">
-        <!-- <div> -->
-            <a href="#"><img class="headerImg" src="img\logo\Reservia.svg" alt="Reservia"></a>
-            <nav class="headerNav">
-                <a class="headerNavLink" href="#lodging">Hébergement</a>
-                <a class="headerNavLink" href="#activity">Activités</a>
-                <a class="headerSignup" href="#signup">S'inscrire</a>            
-            </nav>
-        <!--  -->
+    <header>
+        <a href="#"><img class="Logo" src="img\logo\Reservia.svg" alt="Reservia"></a>
+        <nav class="Nav">
+            <a class="Link" href="#lodging">Hébergement</a>
+            <a class="Link" href="#activity">Activités</a>
+            <a class="Signup" href="#signup">S'inscrire</a>            
+        </nav>
     </header>
 <!--Corps de Page : 3 Sections : Recherche/Hebergement//Activités-->
-    <main class="main">
+    <main>
 <!-- Section Recherche-->
-        <section class="search">
-            <header class="searchHeader">
-                <h1 class="searchHeaderTitle">Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="searchHeaderSubtitle">En plein centre ville ou en pleine nature</p>
-            </header>
+        <section class="Search">
+            <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
             <!-- Barre de Recherche-->
-            <form class="searchForm" > 
-                <i class="fas fa-map-marker-alt fa-1g searchFormIcon"></i>
-                <input class="searchFormInput" type="search" name="ville" placeholder="Marseille, France">
-                <input class="searchFormSubmit" type="submit" value="Rechercher">
+            <form> 
+                <i class="fas fa-map-marker-alt fa-1g Icon"></i>
+                <input class="Input" type="search" name="ville" placeholder="Marseille, France">
+                <input class="Submit" type="submit" value="Rechercher">
             </form>
             <!-- Filtres de Recherche-->
-            <div class="searchFilters">
-                <h2 class="searchFiltersTitle">Filtres</h2>
-                <div class="searchFiltersFilter">
-                    <div class="searchFiltersFilterIconDiv">
-                        <i class="fas fa-money-bill-wave searchFiltersFilterIcon"></i>
-                    </div>
-                    <span class='searchFiltersFilterTitle'>Économique</span>
+            <div class="Filters">
+                <h3>Filtres</h3>
+                <div class="Filter">
+                    <i class="fas fa-money-bill-wave Icon"></i>
+                    <span class='Title'>Économique</span>
                 </div>
-                <div class="searchFiltersFilter">
-                    <div class="searchFiltersFilterIconDiv">
-                        <i class="fas fa-child searchFiltersFilterIcon"></i>
-                    </div>
-                    <span class='searchFiltersFilterTitle'>Familial</span>
+                <div class="Filter">
+                    <i class="fas fa-child Icon"></i>
+                    <span class='Title'>Familial</span>
                 </div>
-                <div class="searchFiltersFilter">
-                    <div class="searchFiltersFilterIconDiv">
-                        <i class="fas fa-heart searchFiltersFilterIcon"></i>
-                    </div>
-                    <span class='searchFiltersFilterTitle'>Romantique</span>
+                <div class="Filter">
+                    <i class="fas fa-heart Icon"></i>
+                    <span class='Title'>Romantique</span>
                 </div>
-                <div class="searchFiltersFilter">
-                    <div class="searchFiltersFilterIconDiv">
-                        <i class="fas fa-dog searchFiltersFilterIcon"></i>
-                    </div>
-                    <span class='searchFiltersFilterTitle'>Animaux autorisés</span>
+                <div class="Filter">
+                    <i class="fas fa-dog Icon"></i>
+                    <span class='Title'>Animaux autorisés</span>
                 </div>
             </div>
             <!-- Résultat de Recherche-->
-            <div class="searchResult">
-                <div class="searchResultIconDiv"><i class="fas fa-info fa-xs searchResultIcon"></i></div>
-                <p class="searchResultText">Plus de 500 logements sont disponibles dans cette ville</p>
+            <div class="Result">
+                <i class="fas fa-info fa-xs Icon"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
 <!-- Section Hébergement-->
-        <section class="lodging" id="lodging">
+        <section id="Lodging">
             <!--Hébergements à Marseille-->
             <div class="lodgingMain">
-                <header class="lodgingMainHeader">
+<!-- A supprimer                <header class="lodgingMainHeader"> -->
                     <h2 class=lodgingMainHeaderTitle>Hébergements à Marseille</h2>
-                </header>
+     <!-- A supprimer           </header> -->
                 <div class="FlexCard">
                     <article class="lodgingMainCard">
                     <a href="#">
@@ -93,17 +81,26 @@
                             >
                             <figcaption class="lodgingMainCardFigureCaption">
                                 <h3 class="lodgingMainCardFigureCaptionTitle">Auberge la Cannebière</h3>
+                                <p class="lodgingMainCardDesc">Nuit à partir de <strong class="lodgingMainCardDescPrice">25€</strong></p>
+                                <div class="lodgingMainCardRating">
+                                    <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon"></i>
+                                    <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon"></i>
+                                    <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon"></i>
+                                    <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon"></i>
+                <!--Ajout d'un attrivut Data- super utile-->
+                                    <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon" data-yolo="true"></i>
+                                </div>
                             </figcaption>
                         </figure>
-                        <p class="lodgingMainCardDesc">Nuit à partir de <strong class="lodgingMainCardDescPrice">25€</strong></p>
+                        <!-- <p class="lodgingMainCardDesc">Nuit à partir de <strong class="lodgingMainCardDescPrice">25€</strong></p>
                         <div class="lodgingMainCardRating">
                             <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon"></i>
                             <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon"></i>
                             <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon"></i>
                             <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon"></i>
-        <!--Ajout d'un attrivut Data- super utile-->
+        Ajout d'un attrivut Data- super utile
                             <i class="fas fa-star fa-xs alt lodgingMainCardRatingIcon" data-yolo="true"></i>
-                        </div>
+                        </div> -->
                     </a>
                     </article>
                     <article class="lodgingMainCard">
@@ -292,17 +289,17 @@
 <!-- Section Activités-->
         <h2 class="activityTitle">Activités à Marseille</h2>
         <section class="activity" id="activity">
-            <div class=activityCardColumn1>
-                <a href="#" class="activityCard">
+            <div class="activityCardColumn1">
+                <a href="#">
                     <img
-                    class="activityCardImg"
-                    src="img\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                    alt="Vue des quais du vieux port de Marseille avec les bateaux en premier plan et la ville en fond"
+                        class="activityCardImg"
+                        src="img\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+                        alt="Vue des quais du vieux port de Marseille avec les bateaux en premier plan et la ville en fond"
                     >
                     <h3 class="activityCardTitle">Vieux Port</h3>
                 </a>
             </div>
-            <div class=activityCardColumn2>
+            <div class="activityCardColumn2">
                 <a href="#" class="activityCard">
                     <img
                         class="activityCardImg"
@@ -320,9 +317,8 @@
                     <h3 class="activityCardTitle">Île du Frioul</h3>
                 </a>
             </div>
-
-            <div class=activityCardColumn3>
-                <a href="#" class="activityCard">
+            <div class="activityCardColumn3">
+                <a href="#">
                     <img
                     class="activityCardImg"
                     src="img\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
@@ -331,7 +327,7 @@
                     <h3 class="activityCardTitle">Par National des Calanques</h3>
                 </a>
             </div>
-            <div class=activityCardColumn4>
+            <div class="activityCardColumn4">
                 <a href="#" class="activityCard">
                     <img
                         class="activityCardImg"
@@ -348,6 +344,7 @@
                     >
                     <h3 class="activityCardTitle">Parc Longchamp</h3>
             </a>
+            </div>
         </section>
     </main>
 <!--Pied de Page : 3 Colonnes-->
