@@ -32,8 +32,8 @@ header {
     transition-duration: 0.1s;
 }
 .Link:hover{
-        color: #0065FC;
-        border-top: 3px solid #0065FC;
+    color: #0065FC;
+    border-top: 3px solid #0065FC;
 }
 .Signup{
     font-size: 1em;
@@ -64,7 +64,6 @@ form .Icon{
     font-size: 1.1rem;
     border-radius: 25% 0 0 25%;
     background-color: #f2f2f2;
-    height: 3rem;
     width: 3rem;
 }
 form .Input{
@@ -153,32 +152,24 @@ h3{
 /*Section Hebergement*/
 #Lodging{
 display: flex;
-flex-direction: row;
+flex-direction: row wrap;
+justify-content: space-between;
 }
 /*Hébergement à Marseille*/
-.FlexCard{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 
-}
-.lodgingMain{
+.Main{
     margin: 0 2rem 2rem 0rem;
     /* Alignement interne de la section pour eviter collision avec aside avec margin des flexcards*/
     padding:1rem 0.5rem 2.5rem 2.5rem; 
     border-radius: 1.25rem;
     background-color: #f2f2f2;
 }
-
-/* .lodgingMainHeader{
-
+.FlexCard{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-
-.lodgingMainHeaderTitle{
-
-} */
-
-.lodgingMainCard{
+.Card{
     background-color: white;
     padding: 0.3rem;
     margin: 0 2rem 2rem 0;
@@ -188,11 +179,11 @@ flex-direction: row;
     cursor: pointer;
 }
 
-.lodgingMainCard:hover {
+.Card:hover {
     transform: scale(1.01);
 }
 
-.lodgingMainCardFigure{
+figure{
     margin: 0;
 }
 
@@ -250,6 +241,7 @@ flex-direction: row;
     border-radius: 1.25rem;
     background-color: #f2f2f2;
     margin-bottom: 2rem;
+    max-width: 400px;
 }
 
 .lodgingPopularTitle{
@@ -287,12 +279,11 @@ flex-direction: row;
 
 .lodgingPopularCardImg{
     min-height: 140px;
-    max-width: 250px;
-    width:100%;
     max-height: 140px;
-    border-radius: 1rem 0 0 1rem;
+    width:100%;
+    min-width: 150px;
     max-width: 40%;
-
+    border-radius: 1rem 0 0 1rem;
 }
 
 .lodgingPopularCardDesc{
@@ -402,9 +393,9 @@ flex-direction: column;
 /* Préparation agencement des cartes avec Flexbox */
 
 
-.activityCardColumn1 a, .activityCardColumn2 a, 
-.activityCardColumn3 a , .activityCardColumn4 a { 
-    
+.activityCardColumn1, .activityCardColumn2, 
+.activityCardColumn3, .activityCardColumn4 { 
+    margin-right: 1rem;
 
 }
 .activityCardColumn2, .activityCardColumn4 {
@@ -448,5 +439,60 @@ flex-direction: column;
 }
 
 
+/* @media screen and (max-width: 800px) {
+    #Lodging {
+        flex-direction: column-reverse;
+    }
+    body{
+        background-color: rgb(180, 120, 23);
+    }
+} */
+/* @media screen and (min-width: 821px) and (max-width: 1100px) {
+    .activity {
+        justify-content: space-around;
+    }
+    body{
+        background-color: green;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    #Lodging{
+        flex-flow: column-reverse;
+    }
+    .lodgingPopular {
+        justify-content: space-around;
+    }
+    body{
+        background-color: indianred;
+    }
+} */
 
 
+/* pour le lodging popular entre pc et tablette : */
+
+ /* #Lodging{
+        display: block;
+    }
+    .lodgingPopular { 
+        flex-flow : wrap;
+        justify-content: center;
+        max-width: 100%;
+        padding-bottom: 1rem;
+
+    }
+    .lodgingPopularTitle{
+        width: 100%;
+    }
+    .lodgingPopularCard{
+        min-width: 400px;
+        max-width: 400px;
+        margin: 1rem;
+    }
+    .lodgingPopularCardImg{
+        max-width: 150px;
+    }
+    .Main{
+        margin: 0 0 2rem 0;
+    }
+ */
