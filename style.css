@@ -16,7 +16,8 @@ a {
 }
 
 .Nav a:nth-child(1){
-    flex-basis:50%;
+    flex-basis:70%;
+    align-self: center;
 }
 
 .Link{
@@ -462,7 +463,7 @@ flex-direction: column;
 
                 .Nav a:nth-child(1){
                     flex-grow: 1;
-                    flex-basis:50%:
+                    flex-basis:50%;
                 }
                 .Nav a:nth-child(2){
                     flex-basis: 25%;
