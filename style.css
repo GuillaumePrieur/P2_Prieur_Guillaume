@@ -235,7 +235,7 @@ figure{
     border-radius: 1.25rem;
     background-color: #f2f2f2;
     margin-bottom: 2rem;
-    max-width: 400px;
+    max-width: 450px;
 }
 
 .lodgingPopularTitle{
@@ -244,9 +244,6 @@ figure{
     justify-content: space-between;
 }
 
-.lodgingPopularTitleIcon{
-
-}
 
 .lodgingPopularCard{
     display:flex;
@@ -266,7 +263,7 @@ figure{
     transform: scale(1.01);
 }
 
-.lodgingPopularCardImgDiv{
+.lodgingPopular a{
     display:flex;
     flex-direction: row;
 } 
@@ -276,7 +273,7 @@ figure{
     max-height: 140px;
     width:100%;
     min-width: 150px;
-    max-width: 40%;
+    max-width: 150px;
     border-radius: 1rem 0 0 1rem;
 }
 
@@ -294,7 +291,7 @@ flex-direction: column;
     display:flex;
     flex-flow: row wrap;
     margin-bottom: 2.5rem;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 .activityCardColumn1, 
 .activityCardColumn2,
@@ -366,7 +363,7 @@ flex-direction: column;
 .footerColumn{
     display:flex;
     flex-direction: column;
-    margin-right: 2rem;
+    margin-right: 3rem;
 
 }
 
@@ -421,7 +418,7 @@ flex-direction: column;
 
 
 
- @media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
     /* Modifications :
     - Popular : Apparition d'un espace vide 
     sous la dernière Card.
@@ -445,7 +442,7 @@ flex-direction: column;
             width: 100%;
         }
         .lodgingPopularCard{
-            min-width: 400px;
+            min-width: 350px;
             max-width: 400px;
             margin: 1rem;
         }
@@ -455,9 +452,35 @@ flex-direction: column;
         .Main{
             margin: 0 0 2rem 0;
         }
-        /* .activity {
-            justify-content:space-evenly;
-        } */
+        
+        @media screen and (max-width: 810px) {
+            /* Modifications:
+            - Activités: Passage sur une colonne.
+            - Footer: Passage du Titre des colonnes sur 2 lignes
+             */
+            .footerColumnDiv{
+                display:flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .footerColumn{
+                display:flex;
+                flex-direction: column;
+                margin:0;
+            }
+            
+            .footerColumnTitle{
+                margin-right: 0;
+                justify-content: center;
+            }
+            
+            .footerColumnLink{
+                font-weight: 550;
+                margin-top: 0.5rem;
+                align-self: center;
+            }
+        }
     }
- }
+}
 
