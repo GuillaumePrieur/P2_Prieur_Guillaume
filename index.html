@@ -20,14 +20,12 @@
 
 <body>
 <!--En tête : Titre, Logo, Barre de Navigation-->
-    <header>
-        <a href="#"><img class="Logo" src="img\logo\Reservia.svg" alt="Reservia"></a>
         <nav class="Nav">
-            <a class="Link" href="#lodging">Hébergement</a>
+            <a href="#"><img class="Logo" src="img\logo\Reservia.svg" alt="Reservia"></a>
+            <a class="Link" href="#Lodging">Hébergement</a>
             <a class="Link" href="#activity">Activités</a>
             <a class="Signup" href="#signup">S'inscrire</a>            
         </nav>
-    </header>
 <!--Corps de Page : 3 Sections : Recherche/Hebergement//Activités-->
     <main>
 <!-- Section Recherche-->
@@ -288,63 +286,99 @@
             </aside>
         </section>
 <!-- Section Activités-->
-        <h2 class="activityTitle">Activités à Marseille</h2>
-        <section class="activity" id="activity">
+        <h2 id="activity" class="activityTitle">Activités à Marseille</h2>
+        <section class="activity">
             <div class="activityCardColumn1">
+                <article class="activityCard">
                 <a href="#">
-                    <img
-                        class="activityCardImg"
+                    <figure>
+                        <img
+                        class="activityCardImg1"
                         src="img\activites\4_small\reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                         alt="Vue des quais du vieux port de Marseille avec les bateaux en premier plan et la ville en fond"
-                    >
-                    <h3 class="activityCardTitle">Vieux Port</h3>
+                        >
+                        <figcaption class="activityCardFigureCaption">
+                            <h3 >Vieux Port</h3>
+                        </figcaption>
+                    </figure>
                 </a>
+                </article>
             </div>
             <div class="activityCardColumn2">
-                <a href="#" class="activityCard">
-                    <img
-                        class="activityCardImg"
+                <article class="activityCard">
+                <a href="#">
+                    <figure>                    
+                        <img
+                        class="activityCardImg2"
                         src="img\activites\4_small\paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                         alt="Photo du Fort, sur paysage rocailleux"
                         >
-                    <h3 class="activityCardTitle">Fort de Pomègues</h3>
+                        <figcaption class="activityCardFigureCaption">
+                            <h3 >Fort de Pomègues</h3>
+                        </figcaption>
+                    </figure>
                 </a>
-                <a href="#" class="activityCard">
-                    <img
-                        class="activityCardImg"
+                </article>
+                <article class="activityCard">
+                <a href="#">
+                    <figure> 
+                        <img
+                        class="activityCardImg3"
                         src="img\activites\4_small\kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                         alt="Vue de la plage en premier plan puis la méditerrannée, pour finir par l'île du Frioul en fond"
                         >
-                    <h3 class="activityCardTitle">Île du Frioul</h3>
+                        <figcaption class="activityCardFigureCaption">
+                            <h3 >Île du Frioul</h3>
+                        </figcaption>
+                    </figure>
                 </a>
+                </article>
             </div>
             <div class="activityCardColumn3">
+                <article class="activityCard">
                 <a href="#">
-                    <img
-                    class="activityCardImg"
-                    src="img\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
-                    alt="Photo des Calanques avec un paysage rocheux et verdoyant, ainsi que la mer à perte de vue, se mêlant au ciel bleu"
-                    >
-                    <h3 class="activityCardTitle">Par National des Calanques</h3>
+                    <figure>
+                        <img
+                        class="activityCardImg4"
+                        src="img\activites\3_medium\kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                        alt="Photo des Calanques avec un paysage rocheux et verdoyant, ainsi que la mer à perte de vue, se mêlant au ciel bleu"
+                        >
+                        <figcaption>
+                            <h3 >Par National des Calanques</h3>
+                        </figcaption>
+                    </figure>
                 </a>
+                </article>
             </div>
             <div class="activityCardColumn4">
-                <a href="#" class="activityCard">
-                    <img
-                        class="activityCardImg"
+                <article class="activityCard">
+                <a href="#">
+                    <figure>
+                        <img
+                        class="activityCardImg5"
                         src="img\activites\4_small\florian-wehde-xW9e8gdotxI-unsplash.jpg"
                         alt="Photo de la Basilique Notre-Dame-de-la-Garden emblème de Marseille surplombant la ville depuis le sommet de la colline"
-                    >
-                    <h3 class="activityCardTitle">Notre-Dame-de-la-Garde</h3>
-            </a>
-            <a href="#" class="activityCard">
-                    <img
-                        class="activityCardImg"
-                        src="img\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg"
-                        alt="Photo de la fontaine monumentale du parc Longchamp, édifié sur les plans de l'architecte Espérandieu"
-                    >
-                    <h3 class="activityCardTitle">Parc Longchamp</h3>
-            </a>
+                        >
+                        <figcaption>
+                            <h3 >Notre-Dame-de-la-Garde</h3>
+                        </figcaption>
+                    </figure>
+                </a>
+                </article>
+                <article class="activityCard">
+                <a href="#">
+                    <figure>
+                        <img
+                            class="activityCardImg6"
+                            src="img\activites\4_small\lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            alt="Photo de la fontaine monumentale du parc Longchamp, édifié sur les plans de l'architecte Espérandieu"
+                        >
+                        <ficaption>
+                            <h3 >Parc Longchamp</h3>
+                        </ficaption>
+                    </figure>
+                </a>
+            </article>
             </div>
         </section>
     </main>
