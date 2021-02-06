@@ -13,11 +13,10 @@ a {
 .Nav {
     display:flex;
     font-weight: bold;
-    /* margin-left:auto; */
 }
 
-.Nav a:nth-of-type(1){
-    flex-basis:70%;
+.Nav a:nth-child(1){
+    flex-basis:50%;
 }
 
 .Link{
@@ -381,42 +380,7 @@ flex-direction: column;
     text-decoration: underline;
 }
 
-
-/* @media screen and (max-width: 800px) {
-    #Lodging {
-        flex-direction: column-reverse;
-    }
-    body{
-        background-color: rgb(180, 120, 23);
-    }
-} */
-/* @media screen and (min-width: 821px) and (max-width: 1100px) {
-    .activity {
-        justify-content: space-around;
-    }
-    body{
-        background-color: green;
-    }
-}
-
-@media screen and (max-width: 820px) {
-    #Lodging{
-        flex-flow: column-reverse;
-    }
-    .lodgingPopular {
-        justify-content: space-around;
-    }
-    body{
-        background-color: indianred;
-    }
-
-} */
-
-
-/* pour le lodging popular entre pc et tablette : */
-
-
-
+/* Media Queries */
 
 @media screen and (max-width: 1440px) {
     /* Modifications :
@@ -479,6 +443,64 @@ flex-direction: column;
                 font-weight: 550;
                 margin-top: 0.5rem;
                 align-self: center;
+            }
+
+            @media screen and (max-width:620px) {
+                /* Modifications:
+                - Nav: réorganisation selon disposition mobile.
+                - Recherche: centrage de la barre de recherche.  
+                */
+                .Nav a:nth-child(1) { order: 1; }
+                .Nav a:nth-child(2) { order: 3; }
+                .Nav a:nth-child(3) { order: 4; }
+                .Nav a:nth-child(4) { order: 2; }
+
+                .Nav {
+                    flex-wrap:wrap;
+                    width: 100%;
+                }
+
+                .Nav a:nth-child(1){
+                    flex-grow: 1;
+                    flex-basis:50%:
+                }
+                .Nav a:nth-child(2){
+                    flex-basis: 25%;
+                    flex-grow: 1;
+                    text-align: center;
+                    margin-left: -2rem;
+
+                }
+                .Nav a:nth-child(3){
+                    flex-basis: 25%;
+                    flex-grow: 1;
+                    text-align: center;
+                    margin-right:-2rem;
+
+                }
+                .Nav a:nth-child(4){
+                    margin-right:-2rem;
+                    flex-basis:30%;
+                    flex-grow:1;
+                    text-align: end;
+                }
+                
+                .Link{
+                    padding: 1rem 2rem 1rem 2rem;
+                }
+                .Link:hover{
+                    color: #0065FC;
+                    border-top: none;
+                    border-bottom: 3px solid #0065FC;
+                }
+                
+                @media screen and (max-width:500px){
+                    /* Modifications:
+                    - Barre de recherche: Div Icon map qui rétrécie 
+                    
+                    */
+                    
+                }
             }
         }
     }
