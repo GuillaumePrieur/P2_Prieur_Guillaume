@@ -45,8 +45,9 @@ h1{
     margin-bottom: 0.5rem;
 }
 .Search p{
-    margin:0;
+    margin:0 0 2rem 0;
     font-weight: 500;
+    font-size: 0.9rem;
 }
 /*Barre de Recherche*/
 form{
@@ -61,7 +62,7 @@ form .Icon{
     font-size: 1.1rem;
     border-radius: 25% 0 0 25%;
     background-color: #f2f2f2;
-    width: 3rem;
+    min-width:50px;
 }
 form .Input{
     font-family: "Raleway";
@@ -79,14 +80,16 @@ form .Submit{
     border-radius: 0 1rem 1rem 0;
     border:none;
     padding: 1rem;
-    cursor:pointer;
+    min-width:50px;
+}
+.fa-search {
+    display:none;
 }
 /*Filtres de Recherche*/
 .Search .Filters{
     display:flex;
     flex-wrap: wrap;
     align-items: baseline;
-    margin-top: 1.5rem;
 }
 h3{
     display:flex;
@@ -121,14 +124,13 @@ h3{
     margin: -3px; /* pour centrer l'icone sur la bordure/ ameliorer l'aspect visuel*/
 }
 .Filter .Title{
-    font-size: 1.1em;
     font-weight: 800;
-    padding:0 1rem 0 1rem;
+    padding:0 0.7rem 0 0.7rem;
 }
 /*Résultat de Recherche*/
 .Result{
     display:flex;
-    align-items: center;
+    align-items: baseline;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
@@ -188,7 +190,7 @@ figure{
     min-width: 225px;
     min-height: 125x;
     border-radius: 1rem 1rem 0 0;
-    
+    object-fit: cover;
 }
 
 /* .lodgingMainCardFigureCaption{
@@ -237,7 +239,9 @@ figure{
     margin-bottom: 2rem;
     max-width: 450px;
 }
-
+h2{
+    font-size: 1.3rem;
+}
 .lodgingPopularTitle{
     display:flex;
     flex-direction: row;
@@ -255,9 +259,9 @@ figure{
     box-shadow: 0 0 16px #c4baba;
     transition-duration: 0.1s;
     cursor: pointer;
-    min-width: 300px;
+    min-width: 310px;
     /* max-width: 370px; Travail de la largeur max en agrandissant en cours*/
-    min-height: 140px;
+    min-height: 110px;
 }
 .lodgingPopularCard:hover{
     transform: scale(1.01);
@@ -269,12 +273,12 @@ figure{
 } 
 
 .lodgingPopularCardImg{
-    min-height: 140px;
-    max-height: 140px;
-    width:100%;
-    min-width: 150px;
-    max-width: 150px;
+    min-height: 125px;
+    max-height: 125px;
+    min-width: 115px;
+    max-width: 115px;
     border-radius: 1rem 0 0 1rem;
+    object-fit: cover;
 }
 
 .lodgingPopularCardDesc{
@@ -364,6 +368,7 @@ flex-direction: column;
     display:flex;
     flex-direction: column;
     margin-right: 3rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -407,12 +412,12 @@ flex-direction: column;
             width: 100%;
         }
         .lodgingPopularCard{
-            min-width: 350px;
-            max-width: 400px;
+            min-width: 310px;
+            max-width: 310px;
             margin: 1rem;
         }
         .lodgingPopularCardImg{
-            max-width: 150px;
+            max-width: 115px;
         }
         .Main{
             margin: 0 0 2rem 0;
@@ -426,30 +431,29 @@ flex-direction: column;
             .footerColumnDiv{
                 display:flex;
                 flex-direction: column;
-                align-items: center;
             }
             
             .footerColumn{
                 display:flex;
                 flex-direction: column;
-                margin:0;
             }
             
             .footerColumnTitle{
                 margin-right: 0;
-                justify-content: center;
+                justify-content: left;
             }
             
             .footerColumnLink{
                 font-weight: 550;
                 margin-top: 0.5rem;
-                align-self: center;
+                align-self: flex-start;
             }
 
             @media screen and (max-width:620px) {
                 /* Modifications:
                 - Nav: réorganisation selon disposition mobile.
-                - Recherche: centrage de la barre de recherche.  
+                - Recherche: centrage de la barre de recherche. 
+                - Filtre: Préparation à la disposition mobile 
                 */
                 .Nav a:nth-child(1) { order: 1; }
                 .Nav a:nth-child(2) { order: 3; }
@@ -469,14 +473,14 @@ flex-direction: column;
                     flex-basis: 25%;
                     flex-grow: 1;
                     text-align: center;
-                    margin-left: -2rem;
+                    /* margin-left: -2rem; */
 
                 }
                 .Nav a:nth-child(3){
                     flex-basis: 25%;
                     flex-grow: 1;
                     text-align: center;
-                    margin-right:-2rem;
+                    /* margin-right: -3rem; */
 
                 }
                 .Nav a:nth-child(4){
@@ -494,13 +498,88 @@ flex-direction: column;
                     border-top: none;
                     border-bottom: 3px solid #0065FC;
                 }
+                .Search h3{
+                    flex-basis:70%;
+                }
                 
                 @media screen and (max-width:500px){
                     /* Modifications:
-                    - Barre de recherche: Div Icon map qui rétrécie 
-                    
+                    - Barre de recherche: Transition avec l'icon Search
+                    - Footer: disposition passe de centré à aligné à gauche
                     */
-                    
+                    form .Submit{
+                        border-radius: 1rem 1rem 1rem 1rem;
+                    }
+                    .submitSpan{
+                        display:none
+                    }
+                    .fa-search{
+                        display:block
+                    }
+
+
+                    @media screen and (max-width:420px) {
+                        /* Modifications:
+                        - Body ; diminution de la marge pour correspondre au design mobile 
+                        - Recherche: centrage de la barre de recherche, 
+                        ajutstement taille input.
+                        - Filtre: arrangement des marges.
+                        - Popular: passage au design mobile
+                        */
+
+                        body{
+                            margin:1rem;
+                        }
+                        .footer{
+                            margin:-1rem;
+                        }
+                        .Nav a:nth-child(2){
+                            margin-left: -1rem;
+                        }
+                        .Nav a:nth-child(3){
+                            margin-right:-1rem;
+                        }
+                        .Nav a:nth-child(4){
+                            margin-right:-1rem;
+                        }
+                        form{
+                            justify-content: center;
+                        }
+                        form .Input{
+                            max-width: 210px;
+                        }
+                        .Filter{
+                            margin-right: auto;
+                        }
+                        .lodgingPopular{
+                            margin: -1rem;
+                            /* margin-bottom: 1rem; */
+                            padding: 1rem 1rem 2.5rem 1rem;
+                            border-radius: unset;
+                        }
+                        .lodgingPopularCard{
+                             min-width: 310px;
+                             margin: 1rem 0 0 0;
+                        }
+                        .Main{
+                            margin: 0 -1rem 0 -1rem;
+                            padding: 1rem 1rem 2.5rem 1rem;
+                            background-color: white;
+                        }
+                        .Card {
+                            margin: 0 0 1rem 0;
+                        }
+                        .lodgingMainCardImg{
+                            max-height: 115px;
+                            min-width: 310px;
+                            max-width: 310px;
+
+                        }
+
+
+
+
+                    }
                 }
             }
         }
