@@ -94,7 +94,7 @@ form .Submit{
 h3{
     display:flex;
     align-items: center;
-    font-size: 1.1em;
+    font-size: 0.9em;
     font-weight: 800;
     margin-right: 2rem;
 }
@@ -198,14 +198,14 @@ figure{
 } */
 
 .lodgingMainCardFigureCaptionTitle{
-    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
-    font-size: 16px;
+    margin: 0.25rem 2rem 0.25rem 1rem;
+    font-size: 0.9rem;
     font-weight: 800;
 }
 
 .lodgingMainCardDesc{
-    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
-    font-size: 14px;
+    margin: 0.25rem 2rem 0.25rem 1rem;
+    font-size: 0.8rem;
 }
 
 .lodgingMainCardDescPrice{
@@ -214,11 +214,12 @@ figure{
 
 .lodgingMainCardRating{
     /*margin-top: auto permet l'espacement pour mettre en bas de Card */
-    margin: auto 0.75rem 0.25rem 0.75rem;
+    margin: auto 2rem 0.25rem 1rem;
 }
 
 .lodgingMainCardRatingIcon{
     color: #0065FC; 
+    margin-right: -3px;
 }
 .lodgingMainCardRatingIcon[data-yolo=true] {
     color: #DEEBFF;
@@ -369,17 +370,15 @@ flex-direction: column;
     flex-direction: column;
     margin-right: 3rem;
     margin-bottom: 2rem;
-
 }
-
-.footerColumnTitle{
-    font-size: 1.1em;
-    font-weight: 800;
+.footer h3{
+    margin-bottom:0.5rem;
 }
 
 .footerColumnLink{
     font-weight: 550;
-    margin-top: 0.5rem
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
 }
 
 .footerColumnLink:hover{
@@ -439,13 +438,10 @@ flex-direction: column;
             }
             
             .footerColumnTitle{
-                margin-right: 0;
                 justify-content: left;
             }
             
             .footerColumnLink{
-                font-weight: 550;
-                margin-top: 0.5rem;
                 align-self: flex-start;
             }
 
@@ -527,11 +523,13 @@ flex-direction: column;
                         - Popular: passage au design mobile
                         */
 
+                        /* Marge */
                         body{
                             margin:1rem;
                         }
                         .footer{
                             margin:-1rem;
+                            padding: 1rem 2rem 2rem 1.5rem;
                         }
                         .Nav a:nth-child(2){
                             margin-left: -1rem;
@@ -542,6 +540,7 @@ flex-direction: column;
                         .Nav a:nth-child(4){
                             margin-right:-1rem;
                         }
+                        /* Search */
                         form{
                             justify-content: center;
                         }
@@ -551,6 +550,7 @@ flex-direction: column;
                         .Filter{
                             margin-right: auto;
                         }
+                        /* Popular */
                         .lodgingPopular{
                             margin: -1rem;
                             /* margin-bottom: 1rem; */
@@ -561,6 +561,7 @@ flex-direction: column;
                              min-width: 310px;
                              margin: 1rem 0 0 0;
                         }
+                        /* Lodging */
                         .Main{
                             margin: 0 -1rem 0 -1rem;
                             padding: 1rem 1rem 2.5rem 1rem;
@@ -573,12 +574,24 @@ flex-direction: column;
                             max-height: 115px;
                             min-width: 310px;
                             max-width: 310px;
-
                         }
-
-
-
-
+                        /* Activity */
+                        .activity img{
+                            max-width: 310px;
+                            max-height: 115px;
+                            min-width: 310px;
+                            min-height: 115px;
+                        }
+                        .activityCardColumn1, 
+                        .activityCardColumn2, 
+                        .activityCardColumn3, 
+                        .activityCardColumn4 {
+                            display: contents;
+                        }
+                        .activityCard{
+                            margin-bottom: 2rem;
+                        }
+                            
                     }
                 }
             }
