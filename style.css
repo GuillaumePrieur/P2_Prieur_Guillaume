@@ -447,6 +447,34 @@ flex-direction: column;
                 align-self: flex-start;
             }
 
+            .activity img{
+                max-width: 310px;
+                max-height: 115px;
+                min-width: 310px;
+                min-height: 115px;
+            }
+            .activityCardColumn1, 
+            .activityCardColumn2, 
+            .activityCardColumn3, 
+            .activityCardColumn4 {
+                display: contents;
+            }
+            .activityCard{
+                margin-bottom: 2rem;
+                margin-right: 1rem;
+            }
+
+            @media screen and (max-width:662px) {
+                /* Modifications:
+                Hebergement: Passage à une colonne, changement pour version mobile */
+                .lodgingMainCardImg{
+                    max-height: 115px;
+                    min-width: 310px;
+                    max-width: 310px;
+                }
+                
+            }
+
             @media screen and (max-width:620px) {
                 /* Modifications:
                 - Nav: réorganisation selon disposition mobile.
@@ -572,12 +600,14 @@ flex-direction: column;
                         .Card {
                             margin: 0 0 1rem 0;
                         }
-                        .lodgingMainCardImg{
+                        /* Modifications apportées plus tôt
+                        
+                            .lodgingMainCardImg{
                             max-height: 115px;
                             min-width: 310px;
                             max-width: 310px;
                         }
-                        /* Activity */
+                        
                         .activity img{
                             max-width: 310px;
                             max-height: 115px;
@@ -592,7 +622,7 @@ flex-direction: column;
                         }
                         .activityCard{
                             margin-bottom: 2rem;
-                        }
+                        } */
                             
                     }
                 }
