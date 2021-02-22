@@ -196,7 +196,7 @@ figure{
     max-width: 225px;
     max-height: 125px;
     min-width: 225px;
-    min-height: 125x;
+    min-height: 125px;
     border-radius: 1rem 1rem 0 0;
     object-fit: cover;
 }
@@ -338,7 +338,7 @@ flex-direction: column;
 }
 .activityCardImg3, 
 .activityCardImg5 {
-    max-width: 300x;
+    max-width: 300px;
     max-height:110px;
     min-width: 300px;
     min-height: 110px;
@@ -369,7 +369,7 @@ flex-direction: column;
 }
 
 .footerColumnLink{
-    font-weight: 550;
+    font-weight: 600;
     margin-top: 0.5rem;
     font-size: 0.9rem;
 }
