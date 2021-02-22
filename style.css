@@ -287,14 +287,18 @@ flex-direction: column;
     margin-bottom: 2.5rem;
     justify-content: space-evenly;
 }
+.activity h2{
+    flex-basis:100%;
+}
 .activityCardColumn1, 
 .activityCardColumn2,
 .activityCardColumn3, 
 .activityCardColumn4 {
     min-height: 430px;
     max-height: 430px;
-    margin: 2rem;
+    margin: 2rem 0.6rem 2rem 0.6rem;
 }
+
 .activityCardColumn2, .activityCardColumn4{
     display:flex;
     flex-direction: column;

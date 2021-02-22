@@ -7,6 +7,15 @@
     - Hebergement: Passage de 3 à 2 Lignes Cards.
     - Activités : Passage de 1 à 2 Lignes avec la dernière colonne.
     */
+    @media screen and (min-width:1039px) and (max-width:1360px){
+        /*
+        - Activités : Passage de 1 à 2 Lignes avec la dernière colonne.
+        */
+        .activity div:nth-child(2){order:2;}
+        .activity:nth-child(3){order:4;}
+        .activity:nth-child(4){order:3;}
+        .activity:nth-child(5){order:5;}
+    }
     @media screen and (max-width: 1120px) {
         /* Modifications:
         - Activités: Passage à 2 Lignes avec 2 Colonnes
@@ -171,6 +180,9 @@
                             margin:-1rem;
                             padding: 1rem 2rem 2rem 1.5rem;
                         }
+                        h2{
+                            margin-left:1.5rem;
+                        }
                         .Nav a:nth-child(2){
                             margin-left: -1rem;
                         }
@@ -216,5 +228,7 @@
         }
     }
 }
+
+
 
 /* Clean le code niveau des classes. Minuscule */
