@@ -24,7 +24,6 @@ a {
     font-size: 1em;
     font-weight: 600;
     padding: 3rem 2rem 2rem 2rem;
-    /* transition-duration: 0.1s; */
     margin-top: -2rem;
 }
 .Link:hover{
@@ -85,10 +84,12 @@ form .Submit{
     border:none;
     padding: 1rem;
     min-width:50px;
+    cursor:pointer;
 }
 .fa-search {
     display:none;
 }
+
 /*Filtres de Recherche*/
 .Search .Filters{
     display:flex;
@@ -160,10 +161,12 @@ display: flex;
 
 .Main{
     margin: 0 2rem 2rem 0rem;
-    /* Alignement interne de la section pour eviter collision avec aside avec margin des flexcards*/
     padding:1rem 0.5rem 2.5rem 2.5rem; 
     border-radius: 1.25rem;
     background-color: #f2f2f2;
+}
+h2{
+    font-size: 1.3rem;
 }
 .FlexCard{
     display:flex;
@@ -188,7 +191,7 @@ figure{
     margin: 0;
 }
 
-.lodgingMainCardImg{
+.Main img{
     height: 8rem;
     max-width: 225px;
     max-height: 125px;
@@ -198,46 +201,38 @@ figure{
     object-fit: cover;
 }
 
-/* .lodgingMainCardFigureCaption{
-    margin: 0.25rem 0.75rem 0.25rem 0.75rem;
-} */
-
-.lodgingMainCardFigureCaptionTitle{
+#Lodging h3{
     margin: 0.25rem 2rem 0.25rem 1rem;
     font-size: 0.9rem;
     font-weight: 800;
 }
 
-.lodgingMainCardDesc{
+#Lodging p{
     margin: 0.25rem 2rem 0.25rem 1rem;
     font-size: 0.8rem;
 }
 
-.lodgingMainCardDescPrice{
-    /* font-weight: bold; */
-}
-
-.lodgingMainCardRating{
+.Rating{
     /*margin-top: auto permet l'espacement pour mettre en bas de Card */
     margin: auto 2rem 0.25rem 1rem;
 }
 
-.lodgingMainCardRatingIcon{
+.Rating .Icon{
     color: #0065FC; 
     margin-right: -3px;
     font-size: 0.65rem;
 }
-.lodgingMainCardRatingIcon[data-yolo=true] {
+.Icon[data-yolo=true] {
     color: #DEEBFF;
 }
 
-.lodgingMainViewmore{
+.Viewmore{
     font-size: 1.1em;
     font-weight: 800;
     font-weight: bold;
 }
 /* Les Plus Populaires */
-.lodgingPopular{
+.Popular{
     display:flex;
     flex-direction: column;
     padding: 1rem 2.5rem 0 2.5rem;
@@ -246,17 +241,14 @@ figure{
     margin-bottom: 2rem;
     max-width: 450px;
 }
-h2{
-    font-size: 1.3rem;
-}
-.lodgingPopularTitle{
+.Popular h2{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 
-.lodgingPopularCard{
+.PopularCard{
     display:flex;
     flex-direction: row;
     background-color: white;
@@ -265,21 +257,17 @@ h2{
     border-radius: 1.25rem;
     box-shadow: 0 0 16px #c4baba;
     transition-duration: 0.1s;
-    cursor: pointer;
     min-width: 310px;
-    /* max-width: 370px; Travail de la largeur max en agrandissant en cours*/
     min-height: 110px;
 }
-.lodgingPopularCard:hover{
+.PopularCard:hover{
     transform: scale(1.01);
 }
-
-.lodgingPopular a{
+.Popular a{
     display:flex;
     flex-direction: row;
 } 
-
-.lodgingPopularCardImg{
+.Popular Img{
     min-height: 125px;
     max-height: 125px;
     min-width: 115px;
@@ -287,14 +275,9 @@ h2{
     border-radius: 1rem 0 0 1rem;
     object-fit: cover;
 }
-
-.lodgingPopularCardDesc{
+.Desc{
 display:flex;
 flex-direction: column;
-/* justify-content: space-around; */
-
-
-
 }
 /* Section Activités */
 
@@ -390,250 +373,3 @@ flex-direction: column;
 .footerColumnLink:hover{
     text-decoration: underline;
 }
-
-/* Media Queries */
-
-@media screen and (max-width: 1440px) {
-    /* Modifications :
-    - Popular : Apparition d'un espace vide 
-    sous la dernière Card.
-    - Hebergement: Passage de 3 à 2 Lignes Cards.
-    - Activités : Passage de 1 à 2 Lignes avec la dernière colonne.
-    */
-    @media screen and (max-width: 1120px) {
-        /* Modifications:
-        - Activités: Passage à 2 Lignes avec 2 Colonnes
-        */
-        #Lodging{
-            flex-direction: column-reverse;
-        }
-        .lodgingPopular { 
-            flex-flow : wrap;
-            justify-content: center;
-            max-width: 100%;
-            padding-bottom: 1rem;
-        }
-        .lodgingPopularTitle{
-            width: 100%;
-        }
-        .lodgingPopularCard{
-            min-width: 310px;
-            max-width: 310px;
-            margin: 1rem;
-        }
-        .lodgingPopularCardImg{
-            max-width: 115px;
-        }
-        .Main{
-            margin: 0 0 2rem 0;
-        }
-        
-        @media screen and (max-width: 810px) {
-            /* Modifications:
-            - Activités: Passage sur une colonne.
-            - Footer: Passage du Titre des colonnes sur 2 lignes
-             */
-            .footerColumnDiv{
-                display:flex;
-                flex-direction: column;
-            }
-            
-            .footerColumn{
-                display:flex;
-                flex-direction: column;
-            }
-            
-            .footerColumnTitle{
-                justify-content: left;
-            }
-            
-            .footerColumnLink{
-                align-self: flex-start;
-            }
-
-            .activity img{
-                max-width: 310px;
-                max-height: 115px;
-                min-width: 310px;
-                min-height: 115px;
-            }
-            .activityCardColumn1, 
-            .activityCardColumn2, 
-            .activityCardColumn3, 
-            .activityCardColumn4 {
-                display: contents;
-            }
-            .activityCard{
-                margin-bottom: 2rem;
-                margin-right: 1rem;
-            }
-
-            @media screen and (max-width:662px) {
-                /* Modifications:
-                Hebergement: Passage à une colonne, changement pour version mobile */
-                .lodgingMainCardImg{
-                    max-height: 115px;
-                    min-width: 310px;
-                    max-width: 310px;
-                }
-                
-            }
-
-            @media screen and (max-width:620px) {
-                /* Modifications:
-                - Nav: réorganisation selon disposition mobile.
-                - Recherche: centrage de la barre de recherche. 
-                - Filtre: Préparation à la disposition mobile 
-                */
-                .Nav a:nth-child(1) { order: 1; }
-                .Nav a:nth-child(2) { order: 3; }
-                .Nav a:nth-child(3) { order: 4; }
-                .Nav a:nth-child(4) { order: 2; }
-
-                .Nav {
-                    flex-wrap:wrap;
-                    width: 100%;
-                }
-
-                .Nav a:nth-child(1){
-                    flex-grow: 1;
-                    flex-basis:50%;
-                }
-                .Nav a:nth-child(2){
-                    flex-basis: 25%;
-                    flex-grow: 1;
-                    text-align: center;
-                    /* margin-left: -2rem; */
-
-                }
-                .Nav a:nth-child(3){
-                    flex-basis: 25%;
-                    flex-grow: 1;
-                    text-align: center;
-                    /* margin-right: -3rem; */
-
-                }
-                .Nav a:nth-child(4){
-                    margin-right:-2rem;
-                    flex-basis:30%;
-                    flex-grow:1;
-                    text-align: end;
-                }
-                
-                .Link{
-                    padding: 1rem 2rem 1rem 2rem;
-                    margin-top: 0;
-                }
-                .Link:hover{
-                    color: #0065FC;
-                    border-top: none;
-                    border-bottom: 3px solid #0065FC;
-                    padding: 1rem 2rem 0.8rem 2rem;
-                }
-                .Search h3{
-                    flex-basis:70%;
-                }
-                
-                @media screen and (max-width:500px){
-                    /* Modifications:
-                    - Barre de recherche: Transition avec l'icon Search
-                    - Footer: disposition passe de centré à aligné à gauche
-                    */
-                    form .Submit{
-                        border-radius: 1rem 1rem 1rem 1rem;
-                    }
-                    .submitSpan{
-                        display:none
-                    }
-                    .fa-search{
-                        display:block
-                    }
-
-
-                    @media screen and (max-width:420px) {
-                        /* Modifications:
-                        - Body ; diminution de la marge pour correspondre au design mobile 
-                        - Recherche: centrage de la barre de recherche, 
-                        ajutstement taille input.
-                        - Filtre: arrangement des marges.
-                        - Popular: passage au design mobile
-                        */
-
-                        /* Marge */
-                        body{
-                            margin:1rem;
-                        }
-                        .footer{
-                            margin:-1rem;
-                            padding: 1rem 2rem 2rem 1.5rem;
-                        }
-                        .Nav a:nth-child(2){
-                            margin-left: -1rem;
-                        }
-                        .Nav a:nth-child(3){
-                            margin-right:-1rem;
-                        }
-                        .Nav a:nth-child(4){
-                            margin-right:-1rem;
-                        }
-                        /* Search */
-                        form{
-                            justify-content: center;
-                        }
-                        form .Input{
-                            max-width: 210px;
-                        }
-                        .Filter{
-                            margin-right: auto;
-                        }
-                        /* Popular */
-                        .lodgingPopular{
-                            margin: -1rem;
-                            /* margin-bottom: 1rem; */
-                            padding: 1rem 1rem 2.5rem 1rem;
-                            border-radius: unset;
-                        }
-                        .lodgingPopularCard{
-                             min-width: 310px;
-                             margin: 1rem 0 0 0;
-                        }
-                        /* Lodging */
-                        .Main{
-                            margin: 0 -1rem 0 -1rem;
-                            padding: 1rem 1rem 2.5rem 1rem;
-                            background-color: white;
-                        }
-                        .Card {
-                            margin: 0 0 1rem 0;
-                        }
-                        /* Modifications apportées plus tôt
-                        
-                            .lodgingMainCardImg{
-                            max-height: 115px;
-                            min-width: 310px;
-                            max-width: 310px;
-                        }
-                        
-                        .activity img{
-                            max-width: 310px;
-                            max-height: 115px;
-                            min-width: 310px;
-                            min-height: 115px;
-                        }
-                        .activityCardColumn1, 
-                        .activityCardColumn2, 
-                        .activityCardColumn3, 
-                        .activityCardColumn4 {
-                            display: contents;
-                        }
-                        .activityCard{
-                            margin-bottom: 2rem;
-                        } */
-                            
-                    }
-                }
-            }
-        }
-    }
-}
-

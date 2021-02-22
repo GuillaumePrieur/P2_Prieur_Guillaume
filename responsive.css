@@ -1,0 +1,220 @@
+/* Media Queries */
+
+@media screen and (max-width: 1440px) {
+    /* Modifications :
+    - Popular : Apparition d'un espace vide 
+    sous la dernière Card.
+    - Hebergement: Passage de 3 à 2 Lignes Cards.
+    - Activités : Passage de 1 à 2 Lignes avec la dernière colonne.
+    */
+    @media screen and (max-width: 1120px) {
+        /* Modifications:
+        - Activités: Passage à 2 Lignes avec 2 Colonnes
+        */
+        #Lodging{
+            flex-direction: column-reverse;
+        }
+        .Popular { 
+            flex-flow : wrap;
+            justify-content: center;
+            max-width: 100%;
+            padding-bottom: 1rem;
+        }
+        .Popular h2{
+            width: 100%;
+        }
+        .PopularCard{
+            min-width: 310px;
+            max-width: 310px;
+            margin: 1rem;
+        }
+        .Popular Img{
+            max-width: 115px;
+        }
+        .Main{
+            margin: 0 0 2rem 0;
+        }
+        
+        @media screen and (max-width: 810px) {
+            /* Modifications:
+            - Activités: Passage sur une colonne.
+            - Footer: Passage du Titre des colonnes sur 2 lignes
+             */
+            .footerColumnDiv{
+                display:flex;
+                flex-direction: column;
+            }
+            
+            .footerColumn{
+                display:flex;
+                flex-direction: column;
+            }
+            
+            .footerColumnTitle{
+                justify-content: left;
+            }
+            
+            .footerColumnLink{
+                align-self: flex-start;
+            }
+
+            .activity img{
+                max-width: 310px;
+                max-height: 115px;
+                min-width: 310px;
+                min-height: 115px;
+            }
+            .activityCardColumn1, 
+            .activityCardColumn2, 
+            .activityCardColumn3, 
+            .activityCardColumn4 {
+                display: contents;
+            }
+            .activityCard{
+                margin-bottom: 2rem;
+                margin-right: 1rem;
+            }
+
+            @media screen and (max-width:662px) {
+                /* Modifications:
+                Hebergement: Passage à une colonne, changement pour version mobile */
+                .Main Img{
+                    max-height: 115px;
+                    min-width: 310px;
+                    max-width: 310px;
+                }
+                
+            }
+
+            @media screen and (max-width:620px) {
+                /* Modifications:
+                - Nav: réorganisation selon disposition mobile.
+                - Recherche: centrage de la barre de recherche. 
+                - Filtre: Préparation à la disposition mobile 
+                */
+                .Nav a:nth-child(1) { order: 1; }
+                .Nav a:nth-child(2) { order: 3; }
+                .Nav a:nth-child(3) { order: 4; }
+                .Nav a:nth-child(4) { order: 2; }
+
+                .Nav {
+                    flex-wrap:wrap;
+                    width: 100%;
+                }
+
+                .Nav a:nth-child(1){
+                    flex-grow: 1;
+                    flex-basis:50%;
+                }
+                .Nav a:nth-child(2){
+                    flex-basis: 25%;
+                    flex-grow: 1;
+                    text-align: center;
+                }
+                .Nav a:nth-child(3){
+                    flex-basis: 25%;
+                    flex-grow: 1;
+                    text-align: center;
+
+                }
+                .Nav a:nth-child(4){
+                    margin-right:-2rem;
+                    flex-basis:30%;
+                    flex-grow:1;
+                    text-align: end;
+                }
+                
+                .Link{
+                    padding: 1rem 2rem 1rem 2rem;
+                    margin-top: 0;
+                }
+                .Link:hover{
+                    color: #0065FC;
+                    border-top: none;
+                    border-bottom: 3px solid #0065FC;
+                    padding: 1rem 2rem 0.8rem 2rem;
+                }
+                .Search h3{
+                    flex-basis:70%;
+                }
+                
+                @media screen and (max-width:500px){
+                    /* Modifications:
+                    - Barre de recherche: Transition avec l'icon Search
+                    - Footer: disposition passe de centré à aligné à gauche
+                    */
+                    form .Submit{
+                        border-radius: 1rem 1rem 1rem 1rem;
+                    }
+                    .submitSpan{
+                        display:none
+                    }
+                    .fa-search{
+                        display:block
+                    }
+
+
+                    @media screen and (max-width:420px) {
+                        /* Modifications:
+                        - Body ; diminution de la marge pour correspondre au design mobile 
+                        - Recherche: centrage de la barre de recherche, 
+                        ajutstement taille input.
+                        - Filtre: arrangement des marges.
+                        - Popular: passage au design mobile
+                        */
+
+                        /* Marge */
+                        body{
+                            margin:1rem;
+                        }
+                        .footer{
+                            margin:-1rem;
+                            padding: 1rem 2rem 2rem 1.5rem;
+                        }
+                        .Nav a:nth-child(2){
+                            margin-left: -1rem;
+                        }
+                        .Nav a:nth-child(3){
+                            margin-right:-1rem;
+                        }
+                        .Nav a:nth-child(4){
+                            margin-right:-1rem;
+                        }
+                        /* Search */
+                        form{
+                            justify-content: center;
+                        }
+                        form .Input{
+                            max-width: 210px;
+                        }
+                        .Filter{
+                            margin-right: auto;
+                        }
+                        /* Popular */
+                        .Popular{
+                            margin: -1rem;
+                            /* margin-bottom: 1rem; */
+                            padding: 1rem 1rem 2.5rem 1rem;
+                            border-radius: unset;
+                        }
+                        .PopularCard{
+                             min-width: 310px;
+                             margin: 1rem 0 0 0;
+                        }
+                        /* Lodging */
+                        .Main{
+                            margin: 0 -1rem 0 -1rem;
+                            padding: 1rem 1rem 2.5rem 1rem;
+                            background-color: white;
+                        }
+                        .Card {
+                            margin: 0 0 1rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Clean le code niveau des classes. Minuscule */
