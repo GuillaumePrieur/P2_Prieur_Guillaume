@@ -7,14 +7,14 @@
     - Hebergement: Passage de 3 à 2 Lignes Cards.
     - Activités : Passage de 1 à 2 Lignes avec la dernière colonne.
     */
-    @media screen and (min-width:1039px) and (max-width:1360px){
+    @media screen and (min-width:1022px) and (max-width:1360px){
         /*
         - Activités : Passage de 1 à 2 Lignes avec la dernière colonne.
         */
-        .activity div:nth-child(2){order:2;}
-        .activity:nth-child(3){order:4;}
-        .activity:nth-child(4){order:3;}
-        .activity:nth-child(5){order:5;}
+        .activity div:nth-child(3){order:1;}
+        .activity div:nth-child(4){order:5;}
+        .activity div:nth-child(5){order:4;}
+        .activity div:nth-child(2){order:3;}
     }
     @media screen and (max-width: 1120px) {
         /* Modifications:
@@ -82,6 +82,7 @@
             .activityCard{
                 margin-bottom: 2rem;
                 margin-right: 1rem;
+                margin-left: 1rem;
             }
 
             @media screen and (max-width:662px) {
@@ -146,6 +147,9 @@
                 .Search h3{
                     flex-basis:70%;
                 }
+                .Signup{
+                    margin-top: -1rem;
+                }
                 
                 @media screen and (max-width:500px){
                     /* Modifications:
@@ -180,8 +184,8 @@
                             margin:-1rem;
                             padding: 1rem 2rem 2rem 1.5rem;
                         }
-                        h2{
-                            margin-left:1.5rem;
+                        .activity h2{
+                            margin-left:0;
                         }
                         .Nav a:nth-child(2){
                             margin-left: -1rem;
@@ -222,6 +226,7 @@
                         .Card {
                             margin: 0 0 1rem 0;
                         }
+                        
                     }
                 }
             }
