@@ -1,14 +1,14 @@
 /* Media Queries */
-
-@media screen and (max-width: 1440px) {
-    /* Modifications :
-    - Popular : Apparition d'un espace vide 
-    sous la dernière Card.
-    - Hebergement: Passage de 3 à 2 Lignes Cards.
-    - Activités : Passage de 1 à 2 Lignes avec la dernière colonne.
-    */
-    @media screen and (min-width:1022px) and (max-width:1360px){
-        /*
+@media screen and (max-width:1440px){
+    .container{
+        width:100%;
+    }
+}
+@media screen and (min-width:1022px) and (max-width:1360px){
+        /* Modifications :
+        - Popular : Apparition d'un espace vide 
+        sous la dernière Card.
+        - Hebergement: Passage de 3 à 2 Lignes Cards.
         - Activités : Passage de 1 à 2 Lignes avec la dernière colonne.
         */
         .activity div:nth-child(3){order:1;}
@@ -234,6 +234,3 @@
     }
 }
 
-
-
-/* Clean le code niveau des classes. Minuscule */
