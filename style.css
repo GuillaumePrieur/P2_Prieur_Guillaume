@@ -378,3 +378,10 @@ flex-direction: column;
 .footerColumnLink:hover{
     text-decoration: underline;
 }
+
+/* Résolution supérieure à 1440px */
+.container{
+    width:1440px;
+    margin-left:auto;
+    margin-right:auto;
+}
